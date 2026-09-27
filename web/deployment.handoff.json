@@ -1,0 +1,51 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-264-doomsdayclock",
+  "version": 1,
+  "launchId": "6d04ceb6-b353-42fa-9fa0-f02e8b532ee0",
+  "manifest": {
+    "kind": "evm_project",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Doomsday (DOOM) and DoomsdayClock on Sepolia (11155111). Token: LaunchToken in src/LaunchToken.sol is OpenZeppelin ERC20 named Doomsday, symbol DOOM, 18 decimals, no constructor arguments; its constructor mints exactly 1,000,000,000 DOOM (10^27 minor units) to msg.sender, the project factory, which supplies the LP and MerkleDistributor. No mint, owner, pause, blocklist, fee or upgrade path. Application contract: DoomsdayClock in src/DoomsdayClock.sol, constructor(address token_) with the single argument $token (the launch token address, resolved by the factory after the token is deployed). The constructor rejects the zero address and any address without code, stores the token as immutable and exposes it via token(). DoomsdayClock has no owner, admin, pause, upgrade, sweep or parameter setter, so no $owner argument exists and none is supplied; it uses no msg.sender-derived privilege in its constructor. It has no payable function and no receive/fallback, never holds ETH, and holds no DOOM at deployment. Game: last-buyer timer paid in DOOM; buyKeys(n, maxCost) with 1 <= n <= 100, price_0 = 1 DOOM, price_k = ceil(price_(k-1) * 1001 / 1000), each key adds 30 seconds capped at now + 24 hours; on settlement 50% of the pot goes to the last buyer, 30% is split per key via claimShare(round), the remainder plus rounding dust carries to the next round. All payouts are pull-based through withdraw() and every state-changing function is nonReentrant. Pool: no hook, paired against native ETH (zero address), fee 3000, tickSpacing 60, initialPrice is sqrtPriceX96 as a decimal string; the deployer derives the effective opening price from the pinned policy when it specifies initialMarketCapWei. Ownership, supply split, allocations and contributor rewards come from launch policy, not this manifest. Compiler per foundry.toml: solc 0.8.26, optimizer 200 runs, evm_version cancun, bytecode_hash none. ABI exports: docs/abi/LaunchToken.json and docs/abi/DoomsdayClock.json. This is a Sepolia test game with no real value; the last buyer is decided by transaction ordering and block timestamps.",
+    "token": {
+      "name": "Doomsday",
+      "symbol": "DOOM",
+      "contract": "LaunchToken",
+      "decimals": 18
+    },
+    "contracts": [
+      {
+        "contract": "DoomsdayClock",
+        "constructorArgs": [
+          "$token"
+        ]
+      }
+    ]
+  },
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "txHash": "0xf9b6659dfce9b563151d785fadeb325b3097f3ca2ec621157353c63c6f5faae8",
+      "abiHash": "f36d2fe28b62f817a4fba0b78bb501b41895eada3982280273c063ad8183f577",
+      "address": "0xbb794a028d8c2b978520917e36d07670358d8c88",
+      "blockNumber": 11791352,
+      "creationCodeHash": "dbfaee8fad3ae4a6ba00a654ba2298e87cbc3500a77122bbb6ec6463056d59cf"
+    },
+    {
+      "name": "DoomsdayClock",
+      "txHash": "0xf9b6659dfce9b563151d785fadeb325b3097f3ca2ec621157353c63c6f5faae8",
+      "abiHash": "8b707281504e7482eec3234b756a99608244c852e3c8ee2dc95da27f5811171b",
+      "address": "0xa639894e009506109ffec93bb7079cde452127c7",
+      "blockNumber": 11791352,
+      "creationCodeHash": "924bff8e96fbbd616fdfd43649493791972c65640594adabd79c6e53550b975e"
+    }
+  ],
+  "sourceCommit": "68e6d27e4d253a605b5eb2b0b2649d9ae7f254d2",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "88f4cb146942bc0f061a51d7f6913ddcb8024653b306d0d9ac1e769a5432ebe9"
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Body / page",
+    "foreground": "rgb(241, 243, 232)",
+    "background": "rgb(18, 21, 18)",
+    "ratio": 16.401241357877367,
+    "minimum": 4.5
+  },
+  {
+    "name": "Muted / clock surface",
+    "foreground": "rgb(174, 183, 166)",
+    "background": "rgb(27, 31, 26)",
+    "ratio": 8.050622112410846,
+    "minimum": 4.5
+  },
+  {
+    "name": "Primary button",
+    "foreground": "rgb(18, 21, 18)",
+    "background": "rgb(216, 243, 106)",
+    "ratio": 14.84439243439858,
+    "minimum": 4.5
+  },
+  {
+    "name": "Input boundary / page",
+    "foreground": "rgb(102, 112, 95)",
+    "background": "rgb(18, 21, 18)",
+    "ratio": 3.545412082547789,
+    "minimum": 3
+  },
+  {
+    "name": "Control boundary / clock surface",
+    "foreground": "rgb(102, 112, 95)",
+    "background": "rgb(27, 31, 26)",
+    "ratio": 3.2189475516599924,
+    "minimum": 3
+  },
+  {
+    "name": "Focus / page",
+    "foreground": "rgb(229, 255, 137)",
+    "background": "rgb(18, 21, 18)",
+    "ratio": 16.638778457543218,
+    "minimum": 3
+  }
+]

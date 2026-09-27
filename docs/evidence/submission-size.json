@@ -1,0 +1,9 @@
+{
+  "baselineBundleBytes": 408102,
+  "newDeliverableRawBytes": 2130263,
+  "reservedGitObjectAndTreeOverheadBytes": 1048576,
+  "conservativeProspectiveBundleBoundBytes": 3586941,
+  "limitBytes": 8388608,
+  "withinBudget": true,
+  "method": "Read-only baseline Git bundle plus every new deliverable byte and 1 MiB reserved overhead; final commit/bundle unavailable because .git is read-only."
+}

@@ -1,0 +1,43 @@
+{
+  "measurements": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "heading": "64px",
+      "input": "16px"
+    },
+    {
+      "width": 960,
+      "scrollWidth": 960,
+      "clientWidth": 960,
+      "heading": "50.88px",
+      "input": "16px"
+    },
+    {
+      "width": 720,
+      "scrollWidth": 720,
+      "clientWidth": 720,
+      "heading": "40px",
+      "input": "16px"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "heading": "40px",
+      "input": "16px"
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "heading": "40px",
+      "input": "16px"
+    }
+  ],
+  "reducedMotion": "0s",
+  "textEnlargement": "200% root text at 960 CSS pixels, no overflow; not native browser zoom",
+  "pageErrors": [],
+  "failedRequests": []
+}

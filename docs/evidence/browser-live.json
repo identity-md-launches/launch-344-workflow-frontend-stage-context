@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-09-27T06:51:19.049Z",
+  "mocked": false,
+  "consoleErrors": [],
+  "failedRequests": [],
+  "verifiedReads": true,
+  "overflow": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390
+    }
+  ],
+  "missingWalletMessage": true,
+  "stateText": "ROUND 001\nAwaiting first key\nThe first key starts the clock\n01:00:00\nHOURS\nMINUTES\nSECONDS\n\n1 hour to start. Every key adds 30 seconds.\n\nCURRENT POT\n\n0\nDOOM, exact amount 0\n DOOM\n\nLast buyer\nThe next key could be yours\nKeys this round\n0\nCarry into next round\n0\nDOOM, exact amount 0\n DOOM\n\nAnyone can settle once the on-chain timer ends.\n\nSettle round",
+  "staticResources": [
+    {
+      "url": "/preview/assets/index-Daib1QrE.js",
+      "bytes": 531140
+    },
+    {
+      "url": "/preview/assets/index-DFSKg09M.css",
+      "bytes": 12886
+    },
+    {
+      "url": "/preview/imd-deployment.json",
+      "bytes": 3258
+    },
+    {
+      "url": "/preview/abi/LaunchToken.json",
+      "bytes": 6245
+    },
+    {
+      "url": "/preview/abi/DoomsdayClock.json",
+      "bytes": 13433
+    }
+  ]
+}

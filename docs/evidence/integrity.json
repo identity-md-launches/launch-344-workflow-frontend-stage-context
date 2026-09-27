@@ -1,0 +1,13 @@
+{
+  "sourceCommit": "68e6d27e4d253a605b5eb2b0b2649d9ae7f254d2",
+  "protectedTrackedFilesUnchanged": true,
+  "networkMatches": true,
+  "contractSetMatches": true,
+  "completeAssetInventory": true,
+  "assetCount": 6,
+  "exportBytes": 569243,
+  "assetHashesVerified": true,
+  "permittedChangedPaths": 48,
+  "noTrackedCachesOrArchives": true,
+  "noSubmodules": true
+}
